@@ -1,4 +1,5 @@
 export class Negociacao {
+    //Por inconsistência, foram modificadas as variáveis QUANTIDADE e VALOR de "private" para "public" para a classe NEGOCIACOESVIEW ter acesso à ambas
     constructor(_data, quantidade, valor) {
         this._data = _data;
         this.quantidade = quantidade;

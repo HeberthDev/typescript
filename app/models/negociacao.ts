@@ -1,8 +1,9 @@
 export class Negociacao {
+    //Por inconsistência, foram modificadas as variáveis QUANTIDADE e VALOR de "private" para "public" para a classe NEGOCIACOESVIEW ter acesso à ambas
     constructor(
         private _data: Date, 
-        private readonly quantidade: number,
-        private readonly valor: number
+        public quantidade: number,
+        public valor: number,
     ){}
 
     get volume(): number {
